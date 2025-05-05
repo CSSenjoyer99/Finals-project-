@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Wix Madefor';
+    overflow-x: hidden;
+    animation: fadeIn 1.5s ease-in;
+}
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@font-face {
+    font-family: 'Wix Madefor';
+    src: url('fonts/wix-madefor/WixMadeforText-Regular.woff2');
+}
+
+.navbar {
+    background-color: #360839;
+    height: 50px;
+}
+
+.navbar .nav-link.atag-2 {
+    color: #ff5e8b;
+    transition: 0.5s;
+}
+
+.navbar .nav-link.atag-1 {
+    color: white;
+}
+
+.navbar .nav-link.atag-2:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.navbar .nav-link {
+    font-size: 16px;
+}
+
+.navbar .nav-link.atag-3 {
+    color: #ff5e8b;
+    transition: 0.5s;
+}
+
+.navbar .nav-link.atag-3:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+#itag {
+    color: #ff5e8b;
+    font-size: 28px;
+}
+
+#itag:hover {
+    color: #f70046;
+}
+
+.what {
+    color: #ff5e8b;
+    cursor: pointer;
+}
+
+.what:hover {
+    color: white;
+}
+
+.fancy-serif {
+    font-family: 'Crimson Text', serif;
+    font-weight: 250;
+    font-size: 38px;
+    line-height: 1.4em;
+}
+
+.account{
+    font-family:"poiret" ;
+
+}
+#icon { 
+    margin-top: 30px;
+}
+
+@font-face {
+    font-family:"poiret" ;
+    src: url(fonts/PoiretOne-Regular.ttf);
+}
+
+.abcd { 
+    text-decoration: none;
+    transition: 1s;
+    font-family: 'Wix Madefor';
+    color: black;
+    font-size: 22px;
+}
+
+.abcd:hover { 
+    color: rgb(98, 97, 97);
+    transition: 1s;
+}
+
+.abcd1 { 
+  text-decoration: none;
+  transition: 1s;
+  font-family: 'Wix Madefor';
+  color: black;
+  font-size: 22px;
+}
+
+.abcd1:hover { 
+  color: rgb(98, 97, 97);
+  transition: 1s;
+}
+
+
+
+
+.sect1 {
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    position: relative;
+  }
+  
+  .maincontents {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .leftmain,
+  .rightmain {
+    min-height: 100vh;
+  }
+  
+  .leftmain {
+    width: 40%;
+    padding: 20px;
+  }
+  
+  .rightmain {
+    width: 20%;
+    padding: 20px;
+  }
+
+  .form1 { 
+    margin-top: 30px;
+  }
+
+  #a12 { 
+    color: black;
+  }
+
+  .inputz {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .inputs {
+    flex: 1;
+    width: 100%;
+  }
+  input { 
+    outline: none;
+    border: 1px solid grey;
+    transition: 0.5s;
+    background-color:rgb(224, 224, 224) ;
+  }
+  input:hover { 
+    background-color: rgba(177, 177, 177, 0.3);
+    transition: 0.5s;
+  }
+  
+  .input-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .input-block label {
+    margin-bottom: 5px;
+  }
+  
+  .input-block input {
+    width: 100%;
+    padding: 8px;
+  }
+
+  #icon1 { 
+    display: none;
+  }
+  
+  .error-label {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .account {
+    width: 100%;
+    background-color: rgba(214, 214, 214, 0.5);
+    display: flex;
+    gap: 15px;
+    padding-left: 10px;
+    padding-top: 6px;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+
+  .account:hover { 
+    background-color: rgb(194, 194, 194);
+    transition: 1s;
+  }
+  
+  .hr-black {
+    border: none;
+    height: 1px;
+    background-color: black;
+    opacity: 1;
+  }
+
+  .hr-black1 {
+    border: none;
+    height: 1px;
+    background-color: black;
+    opacity: 1;
+    margin-top: -11px;
+  }
+
+  .rightmain h1 { 
+    font-size:22px ;
+  }
+
+  .top { 
+    margin-top: 55%;
+  }
+
+  .bunchaPs { 
+    line-height: 0.8;
+    font-family:"poiret" ;
+    font-size: 14px;
+     letter-spacing: 2px;
+  }
+
+  .mid { 
+    font-family:"poiret" ;
+    line-height: 0.8;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+  }
+  .hr-black11 {
+    border: none;
+    height: 1px;
+    background-color: black;
+    opacity: 1;
+
+  }
+  .error-label { 
+    display: none;
+  }
+  input:focus + .error-label { 
+    display: block;
+  }
+
+  .bottom { 
+    line-height: 1.2;
+    font-family:"poiret" ;
+    font-size: 14px;
+     letter-spacing: 2px;
+
+  }
+  .buttonholder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+  
+  #bt1 {
+    width: 250px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 4px 0;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto; 
+    margin-top: -50px;
+  }
+  
+  #bt1:hover {
+    background-color: #ff0048;
+    text-decoration: underline;
+  }
+
+
+    
+footer {
+    background-color: rgb(175, 173, 173);
+    height: 100px;
+    text-align: center;
+    color: #ff0048;
+    border-top: 2px solid grey;
+
+}
+
+#a22 {
+    color: #ff5e8b;
+
+}
+
+footer>p {
+    margin-bottom: -20px;
+}
+
+
+@media (max-width: 768px) { 
+
+  .maincontents { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .leftmain { 
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .abcd1 { 
+    text-align: center;
+    margin-top: 15px;
+  }
+  #icon { 
+    display: none;
+  }
+
+  #icon1 { 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .leftmain,
+  .rightmain {
+    width: 100%;
+    margin-top: 0;
+    min-height: unset;
+  }
+
+  .form1 { 
+    text-align: center;
+    margin-top: 10px;
+  }
+  .top { 
+    margin-top: 0;
+  }
+  #bt1 {
+    position: static;
+    margin: 30px auto 50px auto; 
+    display: block;
+    width: 50%;
+  }
+
+  .error-label {
+    display: none;
+  }
+  
+  input:focus + .error-label {
+    display: block;
+  }
+
+}
+
+
+
+@media (max-width: 1000px) { 
+
+  .maincontents { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .leftmain { 
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #bt1 {
+    position: static;
+    margin: 30px auto 50px auto; 
+    display: block;
+    width: 50%;
+  }
+  .rightmain { 
+    text-align: center;
+  }
+
+  .abcd1 { 
+    margin-top: 15px;
+    text-align: center;
+  }
+  #icon { 
+    display: none;
+  }
+
+  #icon1 { 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .leftmain,
+  .rightmain {
+    width: 100%;
+    margin-top: 0;
+    min-height: unset;
+  }
+
+  .form1 { 
+    text-align: center;
+  }
+  .top { 
+    margin-top: 0;
+  }
+
+  .error-label {
+    display: none;
+  }
+  
+  input:focus + .error-label {
+    display: block;
+  }
+
+}

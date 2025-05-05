@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Wix Madefor';
+    overflow-x: hidden;
+    animation: fadeIn 1.5s ease-in;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@font-face {
+    font-family: 'Wix Madefor';
+    src: url('fonts/wix-madefor/WixMadeforText-Regular.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url(fonts/Cinzel-SemiBold.ttf);
+}
+
+.encode-sans-condensed-thin {
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.fancy-serif {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-weight: 250;
+    font-size: 48px;
+    line-height: 1.4em;
+}
+
+
+.navbar {
+    background-color: #360839;
+    height: 50px;
+}
+
+.navbar .nav-link.atag-2 {
+    color: #ff5e8b;
+    transition: 0.5s;
+
+}
+
+.navbar .nav-link.atag-1 {
+    color: white;
+}
+
+.navbar .nav-link.atag-2:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.navbar .nav-link {
+    font-size: 16px;
+}
+
+.navbar .nav-link.atag-3 {
+    color: #ff5e8b;
+    transition: 0.5s;
+}
+
+.navbar .nav-link.atag-3:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+#itag {
+    color: #ff5e8b;
+    font-size: 28px;
+}
+
+#itag:hover {
+    color: #f70046;
+}
+
+.what {
+    color: #ff5e8b;
+    cursor: pointer;
+}
+
+.what:hover {
+    color: white;
+}
+
+@font-face {
+    font-family: 'semibold';
+    src: url(fonts/WixMadeforDisplay-SemiBold.woff2);
+}
+
+.sect1 {
+    background-image: url(images/mountainrange.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'semibold';
+    padding-bottom: 50px;
+
+}
+.fade-container {
+    opacity: 0;
+    animation: fadeInContainer 0.4s ease-in forwards;
+  }
+  
+  @keyframes fadeInContainer {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-item {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.4s ease forwards;
+  }
+  
+  #an1.fade-item { 
+    animation-delay: 0.4s; 
+}
+  #an2.fade-item { 
+    animation-delay: 0.6s; 
+}
+  #an3.fade-item { 
+    animation-delay: 0.8s; 
+}
+  #an4.fade-item { 
+    animation-delay: 1s; 
+}
+  .buttonholder.fade-item { 
+    animation-delay: 1.2s; 
+}
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+
+.maincontent {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact {
+    font-style: italic;
+    line-height: 1;
+}
+
+.belowcontact>p {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: none;
+
+}
+
+.belowcontact1 {
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-family: none;
+}
+
+.belowcontact1>p {
+    font-size: 24px;
+    color: #f70046;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+}
+
+.input1 {
+    background-color: rgba(247, 0, 70, 0.7);
+    width: 100%;
+    caret-color: black;
+    border: 2px solid transparent;
+}
+
+.input1::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input2 {
+    background-color: rgba(247, 0, 70, 0.7);
+    width: 100%;
+    caret-color: black;
+    height: 125px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    resize: none;
+    border: 2px solid transparent;
+    outline: none;
+}
+
+.input2::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.8s;
+}
+
+.input2:focus { 
+    background-color: rgba(118, 118, 118,0.5 );
+    border: 2px solid rgb(247, 0, 70);
+    transition: 0;
+}
+
+input {
+    padding-left: 15px;
+    outline: none;
+}
+
+
+input:hover {
+    background-color: rgba(247, 0, 70, 0.5);
+    transition: 0.8s;
+}
+
+input:hover::placeholder {
+    font-style: italic;
+}
+
+textarea:hover {
+    background-color: rgba(247, 0, 70, 0.5);
+    transition: 0.8s;
+}
+
+textarea:hover::placeholder {
+    font-style: italic;
+}
+
+input:focus {
+    background-color: rgba(118, 118, 118,0.5 );
+    border: 2px solid rgb(247, 0, 70);
+    transition: 0;
+}
+
+.buttonholder {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+button {
+    border: none;
+    color: black;
+    padding: 2px 54px;
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+button:hover {
+    background-color: #ff5e8b;
+    color: white;
+    transition: 0.6s;
+}
+
+.sect2 {
+    margin-bottom: 30px;
+}
+
+.sect2 div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: none;
+}
+
+.textz {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#p11 {
+    color: rgb(247, 0, 70);
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+#p22 {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+}
+
+.sect2 .icons {
+    flex-direction: row;
+    gap: 22px;
+    font-size: 30px;
+}
+
+footer {
+    background-color: rgb(205, 203, 203);
+    height: 175px;
+    text-align: center;
+    color: #ff0048;
+
+}
+
+#a22 {
+    color: #ff5e8b;
+
+}
+
+footer>p {
+    margin-bottom: -20px;
+}
+
+
+@media (max-width: 768px) {
+
+    .inputs {
+        width: 100%;
+    }
+
+    .buttonholder {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
+
+}
+
+
+@media (max-width: 580px) {
+
+    .inputs {
+        width: 100%;
+    }
+
+    .buttonholder {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .sect2 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .textz {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        line-height: 2px;
+
+    }
+
+
+}

@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/mountainrange.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    overflow-x: hidden;
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: 'abcde';
+    src: url('fonts/WixMadeforText-MediumItalic.woff2');
+}
+
+@font-face {
+    font-family: 'Spart';
+    src: url('fonts/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: #360839;
+    height: 50px;
+}
+
+.navbar .nav-link.atag-2 {
+    color: #ff5e8b;
+    transition: 0.5s;
+}
+
+.navbar .nav-link.atag-1 {
+    color: white;
+}
+
+.navbar .nav-link.atag-2:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.navbar .nav-link {
+    font-size: 16px;
+}
+
+.navbar .nav-link.atag-3 {
+    color: #ff5e8b;
+    transition: 0.5s;
+}
+
+.navbar .nav-link.atag-3:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+#itag {
+    color: #ff5e8b;
+    font-size: 28px;
+}
+
+#itag:hover {
+    color: #f70046;
+}
+
+.what {
+    color: #ff5e8b;
+    cursor: pointer;
+}
+
+.what:hover {
+    color: white;
+}
+
+.fancy-serif {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-weight: 250;
+    font-size: 48px;
+    line-height: 1.4em;
+}
+
+.sect1 {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch; 
+}
+
+.left,
+.right {
+    width: 50%;
+    padding: 0; 
+}
+
+.left img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.right {
+    background-color: white;
+    padding: 62px 50px;
+}
+
+.our {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fancy-serif {
+    font-family: 'Crimson Text', serif;
+    font-weight: 250;
+    font-size: 50px;
+    line-height: 1.4em;
+}
+
+#a2 {
+    padding: 10px 25px;
+    text-decoration: none;
+    border: none;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+}
+
+#a2:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    background-color: rgb(175, 173, 173);
+    height: 50px;
+    text-align: center;
+    color: #ff0048;
+    border-top: 2px solid grey;
+}
+
+#a1 {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+#a1:hover {
+    color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+#a22 {
+    color: #ff5e8b;
+}
+
+footer>p {
+    margin-top: -15px;
+}
+
+@media (max-width: 1000px) {
+    .main {
+        flex-direction: column; 
+    }
+
+    .left,
+    .right {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .right {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px)  { 
+    .our { 
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: 36px;
+    }
+}
+
+@media (max-width: 550px) { 
+    footer { 
+        height: 90px;
+    }
+}
